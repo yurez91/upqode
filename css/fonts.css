@@ -1,0 +1,10 @@
+@font-face{
+	font-family: "Beyno";
+	src: url("../fonts/BEYNO.eot");
+	src: url("../fonts/BEYNO.eot?#iefix")format("embedded-opentype")
+	url("../fonts/beyno-webfont.woff") format("woff"),
+	url("../fonts/beyno-webfont.woff2") format("woff2"),
+	url("../fonts/BEYNO.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
