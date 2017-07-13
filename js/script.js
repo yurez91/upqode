@@ -7,9 +7,10 @@ $(function(){
 
  	 $('ul.third-menu').hover(function(){
  	 	$(this).prev().css({"color": "#fff200"});
- 	 	$(this).prev().find(".fa").removeClass().addClass('fa fa-angle-double-right')
+ 	 	$(this).prev().find(".fa").removeClass().addClass('fa fa-angle-double-right');
  	 }, function() {
  	 	$(this).prev().css({"color": "#fdfdfd"});
+ 	 	$(this).prev().find(".fa").removeClass().addClass('fa fa-angle-right');
  	 });
 
  	 $('#carousel').carousel({
@@ -26,17 +27,6 @@ $(function(){
         if (scrollOffset > containerOffset) {
             $('#photoshop').LineProgressbar({
 		percentage: 79,
-		fillBackgroundColor: '#009dda',
-		backgroundColor: 'transparent',
-		radius: '0px',
-		height: '2px',
-		width: '100%',
-		duration: 4000
-
-	});
-
- 	 $('#html').LineProgressbar({
-		percentage: 90,
 		fillBackgroundColor: '#009dda',
 		backgroundColor: 'transparent',
 		radius: '0px',
@@ -119,13 +109,5 @@ $(function(){
          .end().filter("[href='#"+id+"']").parent().addClass("active-menu-item");
      }                   
   });
-
-	$(".dropdown ul li").hover(
-		function(){
-        $('.dropdown ul li i').addClass('fa fa-angle-double-right');
-    }, function(){
-        $('.dropdown ul li i').addClass('fa fa-angle-double-right');
-    });
-
 
 });

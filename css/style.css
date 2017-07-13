@@ -14,7 +14,7 @@ img{
 
 header .main-menu .navbar-brand{
 	font-family: Beyno;
-	font-size: 20px;
+	font-size: 30px;
 	text-transform: uppercase;
 	color: #503392;
 }
@@ -52,7 +52,7 @@ header .nav.navbar-nav .dropdown li a:visited{
 header .nav.navbar-nav .dropdown li a:hover,
 header .nav.navbar-nav .dropdown li a:focus{
 	background: transparent;
-	color: #fff200;
+	color: #fff200 !important;
 }
 
 header .nav.navbar-nav .dropdown .dropdown-menu{
@@ -152,6 +152,10 @@ header .main-menu .navbar-default .navbar-nav .input-group-btn .btn:focus{
 
 
 /*========slider-header===========*/
+.carousel-inner .item img{
+	max-height: 790px;
+}
+
 .carousel-caption{
 	top: 50%;
 	transform: translateY(-50%);
@@ -166,7 +170,7 @@ header .main-menu .navbar-default .navbar-nav .input-group-btn .btn:focus{
 
 .carousel-caption h1{
 	font-weight: 700;
-	font-size: 64px;
+	font-size: 63px;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -374,13 +378,15 @@ header .main-menu .navbar-default .navbar-nav .input-group-btn .btn:focus{
 	margin-left: 23px;
 }
 
-.carousel-inner .item ul:first-child{
+
+
+.carousel-inner > .item > .container > .row {
 	margin-bottom: 105px;
 } 
 
-.carousel-inner .item ul:last-child{
+.carousel-inner > .item > .container > .row.product_margin {
 	margin-bottom: 170px;
-}
+} 
 
 #products .carousel-indicators{
 	bottom: 57px;
@@ -455,6 +461,7 @@ header .main-menu .navbar-default .navbar-nav .input-group-btn .btn:focus{
 #contact{
 	padding-top: 45px;
 	background: url(../img/contact-map.jpg) no-repeat 0px 265px;
+	background-size: cover;
 }
 
 #contact h2{
@@ -489,12 +496,14 @@ header .main-menu .navbar-default .navbar-nav .input-group-btn .btn:focus{
 	height: 48px;
 	background: transparent;
 	border-radius: 0;
-	padding: 18px 20px;
+	padding: 0px 20px;
+	color: #b7b7b7;
 }
 
 #contact textarea.form-control{
 	height: 142px;
 	padding-top: 13px;
+	resize: none;
 }
 
 input[type=checkbox] {
@@ -656,8 +665,7 @@ footer{
     }
 
     ul.dropdown-menu{
-    	/*display: block !important;*/
-    	min-width: 120px;
+    	display: none !important;
     }
 
     .dropdown-menu-right .dropdown-menu, .navbar-right .dropdown-menu .dropdown-menu, .pull-right .dropdown-menu .dropdown-menu{
@@ -668,6 +676,7 @@ footer{
 	   	left: 83px;
 	   	top: -55px;
    }
+
 }
 
 @media only screen and (max-width : 991px) {
@@ -690,6 +699,10 @@ footer{
 	
 	.contact-form{
 		margin-top: 100px;
+	}
+
+	.benefit{
+		margin-bottom: 25px;
 	}
 
 }
@@ -737,6 +750,14 @@ footer{
 	.carousel-indicators{
 		bottom: -10px;
 	}
+
+	.carousel-control .glyphicon{
+		top: 61%;
+	}
+
+	#why_we{
+		padding: 30px;
+	}
 }
 
 
@@ -762,6 +783,10 @@ footer{
 
 	#about img{
 		float: left !important;
+	}
+
+	ul.thumbnails > li {
+		text-align: center;
 	}
 }
 
